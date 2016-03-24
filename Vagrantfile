@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
 		DOMAIN=${DOMAINS[$i]}
 
 		echo "Creating directory for $DOMAIN..."
-		mkdir -p /var/www/$DOMAIN/public
+		mkdir -p /var/www/$DOMAIN
 
 	        echo "Creating vhost config for $DOMAIN..."
         	sudo cp /etc/apache2/sites-available/scotchbox.local.conf /etc/apache2/sites-available/$DOMAIN.conf
