@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 	
 	# Put the local domains you want here
 	# A folder with the domain's name will be automatically generated! Neat!
-	DOMAINS("")
+	DOMAINS=("")
 
 	## Loop through all sites on provision
 	for ((i=0; i < ${#DOMAINS[@]}; i++)); do
